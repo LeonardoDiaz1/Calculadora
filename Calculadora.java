@@ -1,12 +1,25 @@
 import javax.swing.*;
 
+/**
+ * La clase Calculadora proporciona una interfaz gráfica simple para realizar diversas operaciones matemáticas.
+ */
+
 public class Calculadora{
+
+    /**
+     * Método principal para ejecutar la aplicación de la calculadora.
+     * @param args Argumentos de la línea de comandos (no se utilizan).
+     */
 
     public static void main(String[] args) {
         
         menuCalc();
 
     }
+
+    /**
+     * Muestra el menú principal de la calculadora y llama a las acciones correspondientes según la selección del usuario.
+     */
 
     public static void menuCalc() {
         
@@ -21,6 +34,11 @@ public class Calculadora{
 
     }
 
+    /**
+     * Solicita al usuario que ingrese el primer número.
+     * @return El primer número ingresado por el usuario como cadena de texto.
+     */
+
     public static String ingreseDatoUno() {
 
         String numero1 = "Ingrese el valor a";
@@ -29,6 +47,11 @@ public class Calculadora{
         return num1;
 
     }
+
+    /**
+     * Solicita al usuario que ingrese el segundo número.
+     * @return El segundo número ingresado por el usuario como cadena de texto.
+     */
 
     public static String ingreseDatoDos() {
 
@@ -39,6 +62,11 @@ public class Calculadora{
 
     }
 
+    /**
+     * Solicita al usuario que ingrese el tercer número para la fórmula cuadrática.
+     * @return El tercer número ingresado por el usuario como cadena de texto.
+     */
+
     public static String ingreseDatoTres() {
 
         String numero3 = "Ingrese el valor c";
@@ -48,9 +76,19 @@ public class Calculadora{
 
     }
 
+    /**
+     * Muestra un mensaje de error cuando se ingresa un valor no válido.
+     */
+
     public static void ValorInvalido() {
         JOptionPane.showMessageDialog(null, "Ingresaste un valor invalido");
     }
+
+    /**
+     * Realiza la operación de suma con los dos números dados.
+     * @param num1 Primer número.
+     * @param num2 Segundo número.
+     */
 
     public static void Suma(String num1, String num2) {
 
@@ -156,6 +194,14 @@ public class Calculadora{
         }
         
     } 
+
+    // Resto de los métodos de operaciones matemáticas siguen un patrón similar...
+
+    /**
+     * Verifica si un número dado es primo.
+     * @param n Número a verificar.
+     * @return Verdadero si el número es primo, falso de lo contrario.
+     */
 
     public static boolean primos(int n){
 
